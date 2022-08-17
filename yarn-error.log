@@ -2,7 +2,7 @@ Arguments:
   /Users/vyacheslav.biryukov/.nvm/versions/node/v16.17.0/bin/node /opt/homebrew/bin/yarn install
 
 PATH: 
-  /Users/vyacheslav.biryukov/.nvm/versions/node/v16.17.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+  /Users/vyacheslav.biryukov/.nvm/versions/node/v16.17.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 
 Yarn version: 
   1.22.17
@@ -36,7 +36,10 @@ npm manifest:
       "react": "17.0.2",
       "react-dom": "17.0.2",
       "react-hot-loader": "4.13.0",
-      "styled-components": "5.3.0"
+      "styled-components": "5.3.0",
+      "league-connect": "^5.1.0",
+      "openapi-client-axios": "^3.11.2",
+      "openapi-types": "^7.2.3"
     },
     "devDependencies": {
       "@babel/core": "7.14.6",

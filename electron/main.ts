@@ -1,4 +1,5 @@
 import { app, BrowserWindow, ipcMain } from 'electron'
+import { runOpenApi } from './league_api'
 
 let mainWindow: BrowserWindow | null
 
@@ -36,6 +37,7 @@ async function registerListeners () {
    */
   ipcMain.on('message', (_, message) => {
     console.log(message)
+    runOpenApi();
   })
 }
 
