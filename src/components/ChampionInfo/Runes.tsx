@@ -24,6 +24,10 @@ const Runes = () => {
                     <MainRune src={electr}/>
                     <SecondaryRune src={sorcery}/>
                 </ContainerSelector>
+                <ContainerSelector>
+                    <MainRune src={electr}/>
+                    <SecondaryRune src={sorcery}/>
+                </ContainerSelector>
             </SelectorRunes>
             <WrraperRunesBuild>
             {
