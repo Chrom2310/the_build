@@ -42,3 +42,8 @@ export const useRouter = (): TUseRouter => {
     const path = useContext(RouterContext);
     return [path, setRouter];
 } 
+
+export const useCurrentRouter = () => {
+    const path = useContext(RootRouterContext);
+    return path;
+} 

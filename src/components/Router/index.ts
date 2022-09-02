@@ -1,5 +1,5 @@
-import { useRouter, RootRouter, Router } from './Router';
+import { useRouter, RootRouter, Router, useCurrentRouter } from './Router';
 
 export {
-    useRouter, RootRouter, Router
+    useRouter, RootRouter, Router, useCurrentRouter
 }
