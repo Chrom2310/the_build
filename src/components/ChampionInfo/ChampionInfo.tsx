@@ -16,6 +16,7 @@ import Skills from "./Skills";
 import BuildItems from "./BuildItems";
 import SkillsOrder from "./SkillsOrder";
 import Runes from "./Runes";
+import Counters from "./Counters";
 
 const ChampionInfo = () => {
     
@@ -62,6 +63,7 @@ const ChampionInfo = () => {
             </WrapperInfo>
             <WrapperRunes>
                 <Runes/>
+                <Counters/>
             </WrapperRunes>
         </Container>
     )
