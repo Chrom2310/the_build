@@ -26,7 +26,11 @@ export const WrapperRunes = styled.div`
     background-color: rgba(33, 32, 40, 0.8);
     border-radius: 10px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 `
+
 export const WrapperLine = styled.div`
     width: 250px;
     height: 60px;
@@ -218,20 +222,21 @@ export const Item = styled.img`
 
 export const RunesContainer = styled.div`
     width: 100$;
-    height: 300px;
+    height: 460px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 `
 
 export const WrraperRunesBuild = styled.div`
     width: 100%;
-    height: 360px;
+    height: 260px;
     display: flex;
 `
 
 export const WrapperRune = styled.div`
     width: 50%;
-    height: 300px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,10 +279,9 @@ export const SecondaryRune = styled.img`
 
 export const SelectorRunes = styled.div`
     width: 100%;
-    height: 50px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
-    
 `
 
 export const Runa = styled.div`
@@ -321,6 +325,56 @@ export const ImageRuna = styled.img`
     width: 25px;
     height: 25px;
     object-fit: contain;
+`
 
-    
+export const StatsContainer = styled.div`
+    width: 50%;
+    height: 120px;
+    margin-left: auto;
+`
+
+export const CountersContainer = styled.div`
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+`
+
+export const WrapperCounters = styled.div`
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+`
+export const Counter = styled.div`
+    width: 90px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
+
+export const WinrateWrapper = styled.div`
+    width: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+`
+
+export const CounterWinrate = styled.p`
+    font-size: 12px;
+    font-weight: bold;
+`
+export const WinrateText = styled.p`
+    font-size: 12px;
+    color: #85848C;
+`
+
+export const ImageCounter = styled.img`
+    width: 40px;
+    height: 40px;
 `

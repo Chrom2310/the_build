@@ -1,18 +1,14 @@
-import runes from "../../data/runes";
+import runes, { runeStats } from "../../data/runes";
 import Tooltip from "../Tooltip/Tooltip";
 import electr from '../../pages/mock/Electrocute.png';
 import sorcery from '../../pages/mock/7202_Sorcery.png';
-import { ImageRuna, Runa, RunesContainer, RunesLine, WrapperRune, ImageRunaMain, RunaMain, ContainerSelector, SelectorRunes, MainRune, SecondaryRune, WrraperRunesBuild } from "./styles";
+import { ImageRuna, Runa, RunesContainer, RunesLine, WrapperRune, ImageRunaMain, RunaMain, ContainerSelector, SelectorRunes, MainRune, SecondaryRune, WrraperRunesBuild, StatsContainer } from "./styles";
 
 const Runes = () => {
     return (
         <RunesContainer>
             <SelectorRunes>
                 <ContainerSelector active>
-                    <MainRune src={electr}/>
-                    <SecondaryRune src={sorcery}/>
-                </ContainerSelector>
-                <ContainerSelector>
                     <MainRune src={electr}/>
                     <SecondaryRune src={sorcery}/>
                 </ContainerSelector>
@@ -66,6 +62,25 @@ const Runes = () => {
                 })
             }
             </WrraperRunesBuild>
+            <StatsContainer>
+                {
+                    runeStats.map((el, index) => {
+                        return (
+                            <RunesLine key={index}>
+                                {
+                                    el.stats.map((stat, indexStat) => {
+                                        return (
+                                            <Runa key={indexStat}>
+                                                <ImageRuna src={stat.image}/>
+                                            </Runa>
+                                        )
+                                    })
+                                }
+                            </RunesLine>
+                        )
+                    })
+                }
+            </StatsContainer>
         </RunesContainer>
     )
 }

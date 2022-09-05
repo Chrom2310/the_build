@@ -28,6 +28,13 @@ import scorch from '../pages/mock/Scorch.png';
 import summon from '../pages/mock/SummonAery.png';
 import water from '../pages/mock/Waterwalking.png';
 
+import forse from '../pages/mock/StatModsAdaptiveForceIcon.png';
+import attack from '../pages/mock/StatModsAttackSpeedIcon.png';
+import magic from '../pages/mock/StatModsMagicResIcon.MagicResist_Fix.png';
+import armoricon from '../pages/mock/StatModsArmorIcon.png';
+import offence from '../pages/mock/StatModsCDRScalingIcon.png';
+import health from '../pages/mock/StatModsHealthScalingIcon.png';
+
 const runes = [
     {
         "id": 8100,
@@ -282,6 +289,48 @@ const runes = [
                         "longDesc": "Раз в 10 мин. вы получаете силу умений или силу атаки (<lol-uikit-tooltipped-keyword key='LinkTooltip_Description_Adaptive'><font color='#48C4B7'>адаптивно</font></lol-uikit-tooltipped-keyword>).<br><br><i>10 минут</i>: +8 силы умений или +5 силы атаки <br><i>20 минут</i>: +24 силы умений или +14 силы атаки<br><i>30 минут</i>: +48 силы умений или +29 силы атаки<br><i>40 минут</i>: +80 силы умений или +48 силы атаки<br><i>50 минут</i>: +120 силы умений или +72 силы атаки<br><i>60 минут</i>: +168 силы умений или +101 силы атаки<br>И т.д."
                     }
                 ]
+            }
+        ]
+    }
+]
+
+export const runeStats = [
+    {
+        stats: [
+            {
+                image: forse,
+            },
+            {
+                image: attack,
+            },
+            {
+                image: offence,
+            }
+        ]
+    },
+    {
+        stats: [
+            {
+                image: forse,
+            },
+            {
+                image: armoricon,
+            },
+            {
+                image: magic,
+            }
+        ]
+    },
+    {
+        stats: [
+            {
+                image: health,
+            },
+            {
+                image: armoricon,
+            },
+            {
+                image: magic,
             }
         ]
     }
