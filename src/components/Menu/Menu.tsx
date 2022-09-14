@@ -1,13 +1,16 @@
+import { useCurrentRouter, useRouter } from '../Router';
 import { Container, ContainerMenu, ImageHeader, Button, TextHeader, ButtonSetting } from './styles'
 
 const Menu = () => {
+    const [, push] = useRouter();
+    const currentPath = useCurrentRouter();
     return (
         <Container>
             <ImageHeader/>
             <ContainerMenu>
                 <TextHeader>Текущая игра</TextHeader>
-                <Button>Чемпионы</Button>
-                <Button>В игре</Button>
+                <Button onClick={()=>push('/champion')}>Чемпионы</Button>
+                <Button onClick={()=>push('/game')}>В игре</Button>
             </ContainerMenu>
             <ContainerMenu>
                 <TextHeader>О чемпионах</TextHeader>

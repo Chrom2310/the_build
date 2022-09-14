@@ -1,4 +1,5 @@
 import ChampionInfo from "../ChampionInfo/ChampionInfo";
+import InGamePage from "../InGamePage/InGamePage";
 import Menu from "../Menu/Menu";
 import { RootRouter, Router, useRouter, useCurrentRouter } from "../Router";
 import { LayoutContainer } from "./styles";
@@ -37,10 +38,13 @@ const Header = () => {
 const Layout = () => {
     return (
         <LayoutContainer>
-            <RootRouter initRoouter="/champion">
+            <RootRouter initRoouter="/game">
                 <Menu/>
                 <Router path="/champion">
                     <ChampionInfo/>
+                </Router>
+                <Router path="/game">
+                    <InGamePage/>
                 </Router>
                 {/* <Router path="/home">
                     <HomePage/>
