@@ -5,7 +5,6 @@ export const Container = styled.div`
     height: 640px;
     display: flex;
     justify-content: space-between;
-    
 `
 
 export const WrapperInfo = styled.div`
